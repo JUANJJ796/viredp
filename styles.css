@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5e6d3; /* Color de fondo cálido y terroso */
+}
+
+.navbar {
+    background-color: #8b4513; /* Marrón oscuro colonial */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.logo h1 {
+    color: #f5e6d3; /* Color crema para el texto */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #f5e6d3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.nav-links a:hover {
+    color: #d4a373; /* Marrón claro para el hover */
+}
+
+main {
+    margin-top: 120px;
+    padding: 2rem;
+}
+
+.section {
+    background-color: #fff8f0; /* Fondo crema suave */
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+    border: 1px solid #d4a373;
+}
+
+.section h2 {
+    color: #8b4513; /* Marrón oscuro para títulos */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d4a373;
+    padding-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.section img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid #d4a373;
+}
+
+.section p {
+    color: #5c4033; /* Marrón medio para el texto */
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #8b4513;
+    color: #f5e6d3;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.introduccion {
+    background-color: #fff8f0;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin: 120px 2rem 2rem 2rem;
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+    border: 1px solid #d4a373;
+    text-align: center;
+}
+
+.introduccion h2 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.introduccion p {
+    color: #5c4033;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+} 
